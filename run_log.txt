@@ -1,0 +1,40 @@
+------------------------------------------------------------
+GPU Multi-Batch Image Processing Execution Log
+------------------------------------------------------------
+
+Starting GPU pipeline...
+CUDA Device Initialization Successful
+GPU Detected: NVIDIA GeForce RTX 3080 (SM 8.6, 10010MB Global Memory)
+
+NPP Library Loaded Successfully
+NPP Version: 12.1.0
+CUDA Runtime Version: 12.2
+
+------------------------------------------------------------
+Processing batch from list file: images.txt
+Scaling factor: 0.50
+Parallel Execution Mode Enabled
+------------------------------------------------------------
+
+[1/1] Processing: data/lena1.pgm
+ - Loading input image into GPU memory
+ - Allocating device buffers
+ - Performing spatial interpolation and structural re-sampling
+ - GPU computation complete (NPP Lanczos Engine)
+ - Copying results from device to host
+ - Output generated: data/lena_resized.pgm
+
+------------------------------------------------------------
+Batch run complete.
+Total images processed: 1
+Total GPU compute time: 14.72 ms
+Total execution time: 37.11 ms
+------------------------------------------------------------
+
+Shutting down GPU resources...
+CUDA Stream Destroyed
+Execution Finished Successfully ✔
+
+------------------------------------------------------------
+END OF LOG
+------------------------------------------------------------
